@@ -8,7 +8,11 @@
     <h1>Find Game</h1>
     <br><br>
 
-    <%--ADD SCRIPT HERE--%>
+    <form name="findGameForm" method="POST" action="/games/viewGamesSearch">
+        Find Game
+        <input type="text" name="searchStr">
+        <input type="submit">
+    </form>
 
     <br><br>
     <a href="/">HOME</a>

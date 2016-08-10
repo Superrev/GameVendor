@@ -25,8 +25,10 @@
         <td><c:out value="${game.gameDescription}" /></td>
     </tr>
 
-    <%--ADD SCRIPT HERE--%>
-
+    <tr>
+        <td>Category:</td>
+        <td><c:out value="${category.categoryTitle}" /></td>
+    </tr>
     <tr>
         <td>Category Id:</td>
         <td><c:out value="${game.categoryId}" /></td>
@@ -34,6 +36,10 @@
     <tr>
         <td>Vendor Id:</td>
         <td><c:out value="${game.vendorId}" /></td>
+    </tr>
+    <tr>
+        <td>Vendor Title:</td>
+        <td><c:out value="${game.vendorTitle}" /></td>
     </tr>
 </table>
 <br><br>

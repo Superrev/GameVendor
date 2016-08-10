@@ -8,5 +8,10 @@ import java.util.List;
 
 @Transactional
 public interface GameDAO extends CrudRepository<Game, Long> {
+    List<Game> findByVendorId(long vendorId);
+
+    @Query("SELECT g FROM Game g WHERE g.gameTitle LIKE ?1%")
+    List<Game> findByNameStartsWith(String name);
+
 
 }
